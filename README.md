@@ -3,13 +3,13 @@ Step-by-step instructions on how to use the PubMedScript and also how to import 
 
 ## Preparing your environment
 1. Install gem HTTParty (responsible for the http requests)
-  ```
-  $ sudo gem install httparty
-  ```
+    ```
+    $ sudo gem install httparty
+    ```
 2. Install gem pry, used for debug
-  ```
-  $ sudo gem install pry
-  ```
+    ```
+    $ sudo gem install pry
+    ```
 
 ## Using the PubMedScript
 1. Open your Terminal
