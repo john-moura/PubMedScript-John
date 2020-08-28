@@ -1,6 +1,16 @@
 # PubMedScript README
 Step-by-step instructions on how to use the PubMedScript and also how to import the results into your MySQL local database.
 
+## Preparing your environment
+1. Install gem HTTParty (responsible for the http requests)
+  ```
+  $ sudo gem install httparty
+  ```
+2. Install gem pry, used for debug
+  ```
+  $ sudo gem install pry
+  ```
+
 ## Using the PubMedScript
 1. Open your Terminal
 2. Navegate to the folder where you want to clone this repo
@@ -14,13 +24,13 @@ Step-by-step instructions on how to use the PubMedScript and also how to import 
     $ ruby PubMedScript.rb
     ```
 6. Answer the number of the initial and final page to extract data
-7. Wait the script to finish the execution, and once done, the CSV files will be inside the folder _results_. 
+7. Wait the script to finish the execution, and once done, the CSV files will be inside the folder _results_.
 
-Note: The script is configured to use 100 results per page in the PubMed website, which is the max value, if you want to reduce it, I have to change the value of the variable `size` inside the script. 
+Note: The script is configured to use 100 results per page in the PubMed website, which is the max value, if you want to reduce it, I have to change the value of the variable `size` inside the script.
 
 __________________________________________________________________________________________
 ## Importing the CSV file into the database
-Downlod the tools in the [following link](https://drive.google.com/drive/folders/1RddOWMtU1v1nAaBxKk1iuPAbcr8mXjef?usp=sharing). 
+Downlod the tools in the [following link](https://drive.google.com/drive/folders/1RddOWMtU1v1nAaBxKk1iuPAbcr8mXjef?usp=sharing).
 
 ### Step 1: Install and set the MySQL Server
 1. Download **MySQL Server**
@@ -72,4 +82,3 @@ Downlod the tools in the [following link](https://drive.google.com/drive/folders
     - Set the relationship between the CSV headers and the table columns
     - Follow the process and validate the sum of rows imported.
 2. And **_Voalá!_** Enjoy your affiliation results!
-
