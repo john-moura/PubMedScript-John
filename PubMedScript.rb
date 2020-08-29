@@ -5,7 +5,7 @@ require 'pry'
 size = 100
 headers = ["Title","Author", "Affiliation","Email"]
 date = DateTime.now.strftime("%Y%m%dT%H%M")
-verbose = true
+verbose = false
 
 puts "What is page number to start the data extraction?"
 start_pag = gets.chomp.to_i
